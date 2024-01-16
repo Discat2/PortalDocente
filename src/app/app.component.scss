@@ -1,0 +1,49 @@
+$color-menu-letras: #FFF;
+$color-menu: var(--teal-400);
+$color-menu-hover: var(--teal-300);
+
+:host ::ng-deep {
+
+    /*Menu Header*/
+    .p-menubar {
+
+        .p-menuitem-text,
+        .p-menuitem-icon {
+            color: $color-menu-letras;
+        }
+
+        .p-menuitem-content,
+        .p-menuitem-link:active,
+        .p-submenu-list {
+            background: $color-menu !important;
+        }
+
+        .p-menuitem-link:hover {
+            background: $color-menu-hover !important;
+        }
+    }
+
+    /*Menu Left*/
+    .p-menu {
+
+        border: none !important;
+
+        .p-submenu-header, .p-menuitem-link:active .p-menuitem-link {
+            background: $color-menu !important;
+            color: $color-menu-letras;
+        }
+        .p-menuitem-text, .p-menuitem-icon{
+            color: $color-menu-letras;
+        }
+        .p-menuitem-link:hover {
+            background: $color-menu-hover !important;
+        }
+    }
+}
+
+///CONTED TABLE 
+.shadownTable {
+    -webkit-box-shadow: inset 0px 0px 54px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 54px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 54px 1px rgba(0, 0, 0, 0.3);
+}
